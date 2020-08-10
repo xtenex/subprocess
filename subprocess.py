@@ -10,6 +10,8 @@ def main():
     
     #print("""write your commnad with or without arguments like "ls -alh"\n""")
     try:
+        #process = subprocess.Popen(subprocess.sys.argv[1:], stdout=subprocess.PIPE)
+        #process.communicate()
         subprocess.Popen(subprocess.sys.argv[1:])
         # Aqui hay algo interesante, si quitamos los corchetes de argv dejandolo 'subprocess.sys.argv" tal cual, entra en un ciclo infinito
         # something fun is: if you leave just argv withouth brackets, the program falls into an infinite loop
